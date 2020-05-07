@@ -1,4 +1,4 @@
-# Netlify for [Visual Studio Code](http://code.visualstudio.com)
+# Netlify Theme for [Visual Studio Code](http://code.visualstudio.com)
 
 > A theme for [Visual Studio Code](http://code.visualstudio.com) using Netlify's color palette.
 
