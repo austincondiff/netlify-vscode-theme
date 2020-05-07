@@ -1,0 +1,72 @@
+{
+  "name": "netlify-vscode-theme",
+  "version": "1.0.0",
+  "displayName": "Netlify Theme",
+  "homepage": "https://netlify.com",
+  "description": "Netlify Theme. A dark theme for Visual Studio Code.",
+  "publisher": "austincondiff",
+  "author": "Austin Condiff [@austincondiff]",
+  "license": "MIT",
+  "scripts": {
+    "build": "node ./scripts/build.js",
+    "lint": "node ./scripts/lint.js",
+    "package": "vsce package -o ./bin/netlify.vsix",
+    "vscode:prepublish": "npm run build",
+    "vsce-publish": "vsce publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/austincondiff/netlify-vscode-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/austincondiff/netlify-vscode-theme/issues"
+  },
+  "engines": {
+    "node": "<=10",
+    "vscode": "^1.41.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "netlify",
+    "vscode",
+    "dark",
+    "theme",
+    "color-theme"
+  ],
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "icon": "logo.png",
+  "galleryBanner": {
+    "color": "#0E1E25",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Netlify Dark Theme",
+        "path": "./themes/netlify-dark.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Netlify Light Theme",
+        "path": "./themes/netlify-light.json",
+        "uiTheme": "vs"
+      }
+    ]
+  },
+  "devDependencies": {
+    "js-yaml": "^3.13.1",
+    "prettier": "^1.19.1",
+    "tinycolor2": "^1.4.1",
+    "vsce": "^1.74.0"
+  },
+  "__metadata": {
+    "id": "",
+    "publisherDisplayName": "Austin Condiff",
+    "publisherId": ""
+  }
+}
