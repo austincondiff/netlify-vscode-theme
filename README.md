@@ -8,7 +8,7 @@
 
 📂 Open the **Extensions** sidebar in VS Code. `View → Extensions`
 
-🔍 Search for `Netlify`, choose "Netlify Dark Theme" by **austincondiff**
+🔍 Search for `Netlify`, choose "Netlify Theme" by **austincondiff**
 
 📦 Click **Install** to install it
 
