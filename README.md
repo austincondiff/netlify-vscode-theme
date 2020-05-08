@@ -18,7 +18,7 @@
 
 🎉 Yay! You're all set, enjoy!
 
-## Team
+## Maintainers
 
 This theme is maintained by Austin Condiff.
 [@austincondiff](twitter.com/austincondiff)
