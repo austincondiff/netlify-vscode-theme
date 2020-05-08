@@ -14,7 +14,7 @@
 
 🔄 Click **Reload** to reload your editor
 
-🎨 Navigate to File › Preferences › Color Theme › **Netlify Theme** or any of the variants listed
+🎨 Navigate to `File → Preferences → Color Theme → **Netlify Theme**` or any of the variants listed
 
 🎉 Yay! You're all set, enjoy!
 
