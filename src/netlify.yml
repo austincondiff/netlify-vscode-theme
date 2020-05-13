@@ -6,7 +6,7 @@ semanticClass: theme.netlify
 semanticHighlighting: true
 netlify:
   base:
-    - &BG '#080A0E'
+    - &BG '#071113'
     - &FG '#E9ECEF'
     - &PRIMARY '#00AD9E'
     - &SELECTION '#3E4B58'
@@ -41,7 +41,7 @@ netlify:
     - &TEMP_QUOTES '#CDECA1'
     - &TEMP_PROPERTY_QUOTES '#78F0E6'
   other:
-    - &LineHighlight '#44475A75'
+    - &LineHighlight '#172730'
     - &TRANSPARENT '#FFFFFF00'
     - &NonText '#FFFFFF1A'
     - &WHITE '#FFFFFF'
@@ -49,10 +49,10 @@ netlify:
     - &TAB_DROP_BG '#44475A70'
     # UI Variants
     - &BORDER '#1E2E39'
-    - &BGLighter '#212A35'
-    - &BGLight '#181F28' # HSV (230   , 25.71, 27.45)
-    - &BGDark '#10141B' # HSV (234.55, 25   , 17.25)
-    - &BGDarker '#080A0E' # HSV (234.55, 25   , 13   )
+    - &BGLighter '#172730'
+    - &BGLight '#0E1E25' # HSV (230   , 25.71, 27.45)
+    - &BGDark '#0B181C' # HSV (234.55, 25   , 17.25)
+    - &BGDarker '#071113' # HSV (234.55, 25   , 13   )
 
 # User Interface (more info: https://code.visualstudio.com/docs/getstarted/theme-color-reference)
 colors:
