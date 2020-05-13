@@ -1,6 +1,6 @@
 {
   "name": "netlify-vscode-theme",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "displayName": "Netlify Theme",
   "homepage": "https://netlify.com",
   "description": "Netlify Theme. A dark theme for Visual Studio Code.",

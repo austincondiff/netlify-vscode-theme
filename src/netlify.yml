@@ -325,9 +325,9 @@ colors:
   statusBar.border: *BORDER
 
   # Title Bar Colors (MacOS Only)
-  titleBar.activeBackground: *BGLight # Title Bar background when the window is active
+  titleBar.activeBackground: *BGLighter # Title Bar background when the window is active
   titleBar.activeForeground: *FG # Title Bar foreground when the window is active
-  titleBar.inactiveBackground: *BGDark # Title Bar background when the window is inactive
+  titleBar.inactiveBackground: *BGLight # Title Bar background when the window is inactive
   titleBar.inactiveForeground: *COMMENT # Title Bar foreground when the window is inactive
 
   # Notification Dialog Colors
