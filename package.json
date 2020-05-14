@@ -1,9 +1,9 @@
 {
   "name": "netlify-vscode-theme",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "displayName": "Netlify Theme",
   "homepage": "https://netlify.com",
-  "description": "Netlify Theme. A dark theme for Visual Studio Code.",
+  "description": "Netlify Theme. A dark and light theme for Visual Studio Code.",
   "publisher": "austincondiff",
   "author": "Austin Condiff [@austincondiff]",
   "license": "MIT",
@@ -32,6 +32,7 @@
     "netlify",
     "vscode",
     "dark",
+    "light",
     "theme",
     "color-theme"
   ],
