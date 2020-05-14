@@ -31,21 +31,20 @@ const withAlphaType = new Type('!alpha', {
 const schema = Schema.create([withAlphaType]);
 
 /**
- * Soft variant transform.
+ * Light variant transform.
  * @type {ThemeTransform}
  */
-const transformSoft = (yamlContent, yamlObj) => {
-  const brightColors = [
-    ...yamlObj.netlify.ansi,
-    ...yamlObj.netlify.brightOther,
-  ];
+
+const transformLight = (yamlContent, yamlObj) => {
+  const lightColors = yamlObj.netlify.light;
+  const darkColors = yamlObj.netlify.dark;
+
   return load(
-    yamlContent.replace(/#[0-9A-F]{6}/g, (color) => {
-      if (brightColors.includes(color)) {
-        return tinycolor(color).desaturate(20).toHexString();
-      }
-      return color;
-    }),
+    yamlContent.replace(/#[0-9A-F]{6}/g, color =>
+      darkColors.includes(color)
+        ? lightColors[darkColors.indexOf(color)]
+        : color
+    ),
     { schema }
   );
 };
@@ -57,17 +56,17 @@ module.exports = async () => {
   );
 
   /** @type {Theme} */
-  const base = load(yamlFile, { schema });
+  const dark = load(yamlFile, { schema });
 
   // Remove nulls and other falsey values from colors
-  for (const key of Object.keys(base.colors)) {
-    if (!base.colors[key]) {
-      delete base.colors[key];
+  for (const key of Object.keys(dark.colors)) {
+    if (!dark.colors[key]) {
+      delete dark.colors[key];
     }
   }
 
   return {
-    base,
-    soft: transformSoft(yamlFile, base),
+    dark,
+    light: transformLight(yamlFile, dark),
   };
 };
