@@ -135,7 +135,7 @@ colors:
   badge.background: *BGDark6 # Badge background color
 
   # Progress Bar
-  progressBar.background: *PINK # Background color of the progress bar shown for long running operations
+  progressBar.background: *PRIMARY # Background color of the progress bar shown for long running operations
 
   # List & Trees
   list.activeSelectionBackground: *BGDark6 # List/Tree background color for the selected item when the list/tree is active

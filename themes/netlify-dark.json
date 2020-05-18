@@ -111,7 +111,7 @@
         "inputValidation.errorBorder": "#F77373",
         "badge.foreground": "#E9ECEF",
         "badge.background": "#3E4B58",
-        "progressBar.background": "#DF76C7",
+        "progressBar.background": "#00AD9E",
         "list.activeSelectionBackground": "#3E4B58",
         "list.activeSelectionForeground": "#E9ECEF",
         "list.dropBackground": "#3E4B58",
